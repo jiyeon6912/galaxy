@@ -407,12 +407,13 @@ img {
   /* margin-top: 140px; */
   font-size: 36px;
   font-weight: 800;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   /* background: #fff; */
 }
 
 .sec_04 .container p {
   color: var(--gray-dark);
+  margin-bottom: 64px;
 }
 
 .sec_04 .container ul li {
