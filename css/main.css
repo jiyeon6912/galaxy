@@ -44,6 +44,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .head.container {
@@ -60,7 +61,7 @@ img {
 .header ul {
   display: flex;
   justify-content: space-between;
-  margin-right: 59px;
+  /* margin-right: 59px; */
 }
 
 .header .logo {
@@ -69,10 +70,13 @@ img {
 }
 
 .header ul li a {
-  margin-right: 58px;
+  display: inline-block;
+  padding: 0 17px;
+  margin-right: 25px;
   height: 80px;
   /* background: blue; */
   line-height: 80px;
+  transition: color 0.3s;
 }
 
 .header ul li a:hover {
@@ -91,9 +95,10 @@ img {
   content: '2';
   text-align: center;
   font-size: 7px;
+  line-height: 15px;
   color: #fff;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: red;
   position: absolute;
@@ -102,77 +107,47 @@ img {
 }
 
 /* slide */
-.slide_container {
-  height: 600px;
+.slide {
+  /* height: 600px; */
   margin-top: 80px;
   background: var(--gray-box);
-  /* background: url(../images/tab-s7.jpg) no-repeat;
-  background-position: center;
-  background-size: cover; */
-  /* color: var(--dark); */
-  position: relative;
 }
 
-.container.slide {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* .container.slide .text {
-  display: flex;
-} */
-/* .container.slide .text a {
-  margin-bottom: 185px;
+.slide .container {
+  height: 600px;
   background: red;
-} */
+  background: url(../images/slide_bg.jpg) no-repeat right 50%;
+}
 
-.slide_container h2 {
-  margin-top: 163px;
-  margin-bottom: 98px;
+.slide .container h2 {
+  /* margin-top: 163px; */
+  /* margin-bottom: 86px; */
+  padding: 163px 0 86px;
   font-size: 60px;
   font-weight: 800;
 }
 
+.btns {
+  display: flex;
+  align-items: center;
+}
+
 .show_btn {
-  margin-left: 48px;
-  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
   /* background: red; */
-}
-
-.show_btn::after {
-  content: '';
-  width: 77px;
-  height: 1px;
-  background: var(--dark);
-  position: absolute;
-  bottom: -13px;
-  left: 0;
-}
-
-.slide.container .photo img {
-  /* position: absolute; */
-  margin-top: 104px;
-  width: 700px;
-  height: 395px;
-  /* left: 841px; */
-  /* top: 104px; */
+  border-bottom: 1px solid var(--dark);
+  margin-right: 43px;
+  margin-left: 48px;
 }
 
 .slide_btn {
-  position: absolute;
-  top: 369px;
-  left: 551px;
-  /* display: block; */
-  /* margin-top: 86px; */
-  /* width: 168px;
-  height: 46px; */
   padding: 14px 38px;
   /* background: red; */
   color: #fff;
   background: var(--dark);
-  /* line-height: 16px; */
-  /* text-align: center; */
-  border-radius: 39px;
+  border-radius: 38px;
 }
 
 /* content */
@@ -220,7 +195,7 @@ img {
   box-sizing: border-box;
 }
 
-.sec_01 .container .btn {
+.sec_01 .container .btn a {
   display: block;
   width: 121px;
   height: 36px;
@@ -234,15 +209,16 @@ img {
 
 /* section-02 */
 .sec_02 .container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  height: 570px;
-  /* padding: 0 380px 160px; */
-  padding: 0 380px 0;
+  /* height: 570px; */
+  /* padding: 0 380px 0; */
   /* background: royalblue; */
-  background: #fff;
+  /* background: #fff; */
+}
+
+.section.sec_02 {
+  height: 570px;
+  /* padding: 0 0 160px; */
+  /* background: blue; */
 }
 
 .sec_02 .container .text {
@@ -255,10 +231,11 @@ img {
   align-items: center;
   /* background: chocolate; */
 }
+
 .sec_02 .container h3 {
   font-size: 36px;
   font-weight: 800;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   /* background: red; */
 }
 
@@ -270,7 +247,7 @@ img {
   width: 260px;
   height: 260px;
   background: var(--gray-box);
-  margin-top: 60px;
+  margin-top: 64px;
 }
 
 .sec_02 .container ul img {
@@ -281,7 +258,7 @@ img {
 
 /* section-03 */
 .section.sec_03 {
-  position: relative;
+  /* position: relative; */
   height: 600px;
   background: url(../images/image\ 5.jpg) no-repeat;
   background-position: center;
@@ -297,6 +274,7 @@ img {
   padding-left: 40px;
   box-sizing: border-box;
   /* margin-top: 169px; */
+  /* background: red; */
 }
 
 .sec_03 .container h4 {
@@ -311,13 +289,19 @@ img {
 }
 
 .sec_03_btn {
-  position: absolute;
-  top: 402px;
-  left: 422px;
+  /* display: block; */
+  display: inline-block;
+  /* position: absolute; */
+  /* top: 402px; */
+  /* left: 422px; */
   padding: 15px 38px;
   background: var(--gray-box);
+  /* background: red; */
   border-radius: 39px;
   color: var(--dark);
+  /* margin-bottom: 152pxpx; */
+  margin-top: 56px;
+  margin-left: 42px;
 }
 
 /* section-04 */
@@ -394,11 +378,17 @@ img {
   /* flex-direction: column; */
   /* justify-content: center; */
   /* align-items: center; */
-  height: 650px;
+  /* height: 650px; */
   /* padding: 0 380px 160px; */
-  padding: 0 380px 0;
+  /* padding: 0 380px 0; */
   /* background: royalblue; */
+  /* background: #fff; */
+}
+
+.section.sec_05 {
+  height: 650px;
   background: #fff;
+  /* background: red; */
 }
 
 .sec_05 .container .text {
@@ -470,11 +460,11 @@ img {
 }
 
 .footer .store_btn {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer .sns {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer .sns a i {
@@ -508,23 +498,33 @@ img {
   /* padding: 10px 37px 10px 10px; */
   /* 별도의 높이를 지정하지 않고 padding: ;으로 높이를 지정한다. */
   /* 가로방향 padding: 은 검색아이콘까지 입력문자가 입력되지 않도록 공간을 확보하기 위해서이다. padding: 의 값은 시계방향으로 지정한다; */
+  padding: 0 0 0 20px;
+  border: none;
   box-sizing: border-box;
   /* transition: border 0.3s; */
 }
 
 .email_box input[type='email']::placeholder {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   color: var(--gray-dark);
   font-size: 14px;
+  /* margin-left: 20px; */
+  /* padding-left: 20px; */
+}
+
+.email_box span {
+  font-size: 14px;
+  padding: 17px 30px;
+  background: var(--accent);
 }
 
 .email_box label {
   /* width: 100px;
   height: 50px; */
-  font-size: 14px;
-  padding: 15px 28px;
+  /* font-size: 14px; */
+  /* padding: 15px 28px; */
   /* background: crimson; */
-  background: var(--accent);
+  /* background: var(--accent); */
 }
 
 .email_box button {
@@ -538,15 +538,26 @@ img {
 }
 /* -------------email input end----------- */
 
-.footer .left .store_btn a {
+.footer .left .store_btn {
+  display: flex;
+  /* width: 130px;
+  height: 40px; */
+  /* display: inline-block; */
   /* width: 130px; */
   /* height: 40px; */
   /* display: flex; */
-  margin-right: 20px;
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: 1px solid var(--gray-dark);
+  /* margin-right: 20px; */
+  /* padding: 12px 20px; */
+  /* border-radius: 10px; */
+  /* border: 1px solid var(--gray-dark); */
   /* background: red; */
+}
+
+.footer .left .app_btn,
+.footer .left .play_btn {
+  width: 130px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 .footer .right {
@@ -597,8 +608,10 @@ img {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 55px;
+  /* background: red; */
 }
 
 .footer .right .bottom_menu ul li {
-  padding: 10px 0;
+  padding: 0 0 32px;
+  /* background: blue; */
 }
