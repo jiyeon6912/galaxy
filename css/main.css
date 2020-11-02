@@ -172,8 +172,6 @@ img {
   background: var(--gray-box);
 }
 .sec_01 .container .text {
-  /* display: flex;
-  flex-direction: column; */
   /* background: red; */
 }
 
@@ -209,10 +207,7 @@ img {
 
 /* section-02 */
 .sec_02 .container {
-  /* height: 570px; */
-  /* padding: 0 380px 0; */
   /* background: royalblue; */
-  /* background: #fff; */
 }
 
 .section.sec_02 {
@@ -291,9 +286,6 @@ img {
 .sec_03_btn {
   /* display: block; */
   display: inline-block;
-  /* position: absolute; */
-  /* top: 402px; */
-  /* left: 422px; */
   padding: 15px 38px;
   background: var(--gray-box);
   /* background: red; */
@@ -306,16 +298,8 @@ img {
 
 /* section-04 */
 .sec_04 .container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 990px; */
-  /* padding: 140px 380px; */
-  /* background: royalblue; */
-  /* background: #fff; */
-  /* background: royalblue; */
 }
+
 .section.sec_04 {
   height: 990px;
   padding: 140px 0 0;
@@ -362,10 +346,6 @@ img {
   margin-top: 40px;
 }
 
-/* .sec_04 .container ul li:nth-child(8) {
-  margin-bottom: 0;
-} */
-
 .sec_04 .container ul img {
   width: 160px;
   height: 160px;
@@ -374,15 +354,7 @@ img {
 
 /* section-05 */
 .sec_05 .container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 650px; */
-  /* padding: 0 380px 160px; */
-  /* padding: 0 380px 0; */
   /* background: royalblue; */
-  /* background: #fff; */
 }
 
 .section.sec_05 {
@@ -413,13 +385,6 @@ img {
   color: var(--gray-dark);
 }
 
-/* .sec_05 .container ul li {
-  width: 360px;
-  height: 360px;
-  background: var(--gray-box);
-  margin-top: 60px;
-} */
-
 .sec_05 .container ul img {
   width: 360px;
   height: 360px;
@@ -432,9 +397,11 @@ img {
 .footer {
   height: 600px;
   background: var(--footer-color);
-  padding: 0 380px;
+  /* padding: 0 380px; */
   color: #fff;
   /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 .footer .left {
@@ -478,9 +445,6 @@ img {
 
 .footer .left .copyright {
   font-size: 14px;
-  /* color: red; */
-  /* background: yellow; */
-  /* margin-bottom: 100px; */
   margin-top: 65px;
 }
 /* -------------email input start----------- */
@@ -495,21 +459,14 @@ img {
   outline: none;
   width: 358px;
   height: 50px;
-  /* padding: 10px 37px 10px 10px; */
-  /* 별도의 높이를 지정하지 않고 padding: ;으로 높이를 지정한다. */
-  /* 가로방향 padding: 은 검색아이콘까지 입력문자가 입력되지 않도록 공간을 확보하기 위해서이다. padding: 의 값은 시계방향으로 지정한다; */
   padding: 0 0 0 20px;
   border: none;
   box-sizing: border-box;
-  /* transition: border 0.3s; */
 }
 
 .email_box input[type='email']::placeholder {
-  /* padding: 0 20px; */
   color: var(--gray-dark);
   font-size: 14px;
-  /* margin-left: 20px; */
-  /* padding-left: 20px; */
 }
 
 .email_box span {
@@ -518,39 +475,10 @@ img {
   background: var(--accent);
 }
 
-.email_box label {
-  /* width: 100px;
-  height: 50px; */
-  /* font-size: 14px; */
-  /* padding: 15px 28px; */
-  /* background: crimson; */
-  /* background: var(--accent); */
-}
-
-.email_box button {
-  /* width: 100px; */
-  /* height: 50px; */
-  /* font-size: 14px; */
-  /* color: #fff; */
-  /* padding: 14px 28px; */
-  /* background: crimson; */
-  /* background: var(--accent); */
-}
 /* -------------email input end----------- */
 
 .footer .left .store_btn {
   display: flex;
-  /* width: 130px;
-  height: 40px; */
-  /* display: inline-block; */
-  /* width: 130px; */
-  /* height: 40px; */
-  /* display: flex; */
-  /* margin-right: 20px; */
-  /* padding: 12px 20px; */
-  /* border-radius: 10px; */
-  /* border: 1px solid var(--gray-dark); */
-  /* background: red; */
 }
 
 .footer .left .app_btn,
@@ -569,10 +497,6 @@ img {
   display: flex;
   width: 600px;
   margin-top: 140px;
-  /* align-items: flex-end; */
-  /* align-items: flex-start; */
-  /* align-items: center; */
-  /* background: chartreuse; */
 }
 
 .footer .right .bottom_menu > li {
@@ -581,22 +505,7 @@ img {
   display: inline-block;
   /* background: red; */
   margin-right: 40px;
-
-  /* padding-right: 130px; */
 }
-
-/* .footer .right .bottom_menu > li .blank {
-  margin-bottom: 56px;
-} */
-
-/* .footer .right .bottom_menu > li > ul {
-  width: 160px;
-  background: blue;
-} */
-
-/* .footer .right .bottom_menu > li:first-child {
-  margin-bottom: 54px;
-} */
 
 .footer .right .bottom_menu > li:last-child {
   /* padding-right: 0; */
